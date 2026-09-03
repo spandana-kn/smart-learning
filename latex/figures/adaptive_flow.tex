@@ -1,0 +1,28 @@
+\begin{tikzpicture}[
+  font=\scriptsize,
+  node distance=0.5cm and 0.42cm,
+  step/.style={draw, rounded corners, text width=1.45cm, minimum height=0.5cm, align=center, fill=green!8},
+  decision/.style={draw, rounded corners, text width=1.45cm, minimum height=0.5cm, align=center, fill=yellow!18},
+  arrow/.style={-Latex, thick}
+]
+
+\node[step] (mastery) {Mastery\\map};
+\node[step, right=of mastery] (candidates) {Unlocked\\concepts};
+\node[decision, right=of candidates] (state) {Focus +\\emotion};
+\node[step, right=of state] (target) {Target\\difficulty};
+
+\node[step, below=0.65cm of candidates] (score) {Rank\\questions};
+\node[step, right=of score] (select) {Select\\best item};
+\node[step, right=of select] (answer) {Record\\answer};
+\node[step, right=of answer] (update) {Update\\mastery};
+
+\draw[arrow] (mastery) -- (candidates);
+\draw[arrow] (candidates) -- (state);
+\draw[arrow] (state) -- (target);
+\draw[arrow] (target) |- (score);
+\draw[arrow] (score) -- (select);
+\draw[arrow] (select) -- (answer);
+\draw[arrow] (answer) -- (update);
+\draw[arrow] (update.east) -- ++(0.32,0) |- (mastery.east);
+
+\end{tikzpicture}

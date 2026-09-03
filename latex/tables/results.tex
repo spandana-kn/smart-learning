@@ -1,0 +1,36 @@
+\begin{table}[!htbp]
+\caption{Emotion Classification on 50 Labelled Webcam Frames}
+\label{tab:emotion}
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{lccc}
+\toprule
+\multirow{2}{*}{\textbf{True State}} & \multicolumn{3}{c}{\textbf{Predicted State}} \\
+\cmidrule(lr){2-4}
+ & FOCUSED & BORED & SLEEPY \\
+\midrule
+Focused & 17 & 2 & 1 \\
+Bored & 3 & 13 & 1 \\
+Sleepy & 0 & 1 & 12 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{Difficulty Shift During Adaptive Practice}
+\label{tab:difficulty}
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Attempt Range} & \textbf{Easy} & \textbf{Medium} & \textbf{Hard} \\
+\midrule
+1--5 & 100\% & 0\% & 0\% \\
+6--10 & 40\% & 60\% & 0\% \\
+11--15 & 0\% & 40\% & 60\% \\
+16--20 & 0\% & 20\% & 80\% \\
+\bottomrule
+\end{tabular}
+\end{table}

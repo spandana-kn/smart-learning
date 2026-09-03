@@ -1,0 +1,59 @@
+test_case_id,student_name,student_email,sessions_tested,webcam_samples,face_detection_rate_pct,avg_focus_pct,dominant_emotion,focused_pct,bored_pct,sleepy_pct,topics_completed_count,completed_topic_path,current_topic,current_topic_progress_pct,risk_level,testing_result
+TC001,Aishwarya Kulkarni,aishwarya.kulkarni.14@smartfocus.demo,4,74,91.9,79.4,FOCUSED,91.9,8.1,0.0,3,Data Types -> Lists -> Variables,Tuples,47,LOW,Test passed: learner engaged
+TC002,Aishwarya Murthy,aishwarya.murthy.49@smartfocus.demo,5,89,94.4,80.3,FOCUSED,94.4,5.6,0.0,6,Exception Handling -> Operators -> Functions -> Loops -> Variables -> Data Types,Lambda Functions,19,LOW,Test passed: learner engaged
+TC003,Ananya Hegde,ananya.hegde.13@smartfocus.demo,7,139,70.5,31.6,FOCUSED,51.8,9.4,38.8,6,Variables -> Data Types -> Exception Handling -> Operators -> Loops -> Functions,Constructors,50,HIGH,Needs mentor attention
+TC004,Ananya Reddy,ananya.reddy.48@smartfocus.demo,6,122,70.5,32.0,FOCUSED,50.0,9.8,40.2,4,Data Types -> Variables -> Tuples -> Lists,Loop Control,57,HIGH,Needs mentor attention
+TC005,Bhuvan Hegde,bhuvan.hegde.33@smartfocus.demo,4,89,75.3,31.5,FOCUSED,50.6,12.4,37.1,5,Data Types -> File Handling -> Functions -> Variables -> Modules,Operators,40,HIGH,Needs mentor attention
+TC006,Charan Patil,charan.patil.30@smartfocus.demo,4,80,77.5,39.5,SLEEPY,45.0,0.0,55.0,5,Data Types -> Dictionaries -> Variables -> Tuples -> Lists,Exception Handling,26,HIGH,Needs mentor attention
+TC007,Deepak Shetty,deepak.shetty.24@smartfocus.demo,5,94,95.7,80.5,FOCUSED,95.7,4.3,0.0,3,Data Types -> Functions -> Variables,Loop Control,39,LOW,Test passed: learner engaged
+TC008,Dhanush Kumar,dhanush.kumar.23@smartfocus.demo,5,107,60.7,30.2,SLEEPY,45.8,7.5,46.7,3,Data Types -> Variables -> Lists,Exception Handling,44,HIGH,Needs mentor attention
+TC009,Dhanush Prabhu,dhanush.prabhu.58@smartfocus.demo,4,94,72.3,32.2,FOCUSED,55.3,9.6,35.1,3,Variables -> Data Types -> Operators,Iterators,54,HIGH,Needs mentor attention
+TC010,Harsha Kumar,harsha.kumar.43@smartfocus.demo,4,77,58.4,29.7,SLEEPY,36.4,13.0,50.6,4,Recursion -> Functions -> Data Types -> Variables,File Handling,33,HIGH,Needs mentor attention
+TC011,Harsha Reddy,harsha.reddy.8@smartfocus.demo,7,148,66.9,31.6,SLEEPY,43.2,11.5,45.3,3,Data Types -> Variables -> Inheritance,Function Arguments,49,HIGH,Needs mentor attention
+TC012,Kavya Naidu,kavya.naidu.16@smartfocus.demo,3,72,97.2,73.6,FOCUSED,97.2,2.8,0.0,4,Recursion -> Functions -> Data Types -> Variables,Loop Control,32,LOW,Test passed: learner engaged
+TC013,Kavya Poojary,kavya.poojary.51@smartfocus.demo,7,131,90.1,70.7,FOCUSED,90.1,9.9,0.0,5,Modules -> Variables -> File Handling -> Functions -> Data Types,Classes Objects,21,LOW,Test passed: learner engaged
+TC014,Keerthana Pai,keerthana.pai.32@smartfocus.demo,6,126,83.3,51.0,FOCUSED,69.8,30.2,0.0,3,Data Types -> Variables -> Lists,Iterators,52,MEDIUM,Watch and revise weak topics
+TC015,Kiran Hegde,kiran.hegde.53@smartfocus.demo,5,103,71.8,31.5,FOCUSED,44.7,13.6,41.7,3,Data Types -> Variables -> Inheritance,Loops,55,HIGH,Needs mentor attention
+TC016,Kiran Prabhu,kiran.prabhu.18@smartfocus.demo,4,89,74.2,31.2,SLEEPY,42.7,12.4,44.9,3,Data Types -> Loops -> Variables,Custom Exceptions,22,HIGH,Needs mentor attention
+TC017,Likith Kulkarni,likith.kulkarni.34@smartfocus.demo,5,116,96.6,80.4,FOCUSED,96.6,3.4,0.0,3,Data Types -> Functions -> Variables,Sets,54,LOW,Test passed: learner engaged
+TC018,Manu Murthy,manu.murthy.9@smartfocus.demo,6,121,93.4,78.1,FOCUSED,93.4,6.6,0.0,3,Variables -> Loops -> Data Types,Packages,30,LOW,Test passed: learner engaged
+TC019,Manu Shetty,manu.shetty.44@smartfocus.demo,5,113,94.7,81.4,FOCUSED,94.7,5.3,0.0,4,Variables -> Polymorphism -> Inheritance -> Data Types,Function Arguments,30,LOW,Test passed: learner engaged
+TC020,Megha Menon,megha.menon.45@smartfocus.demo,3,62,80.6,42.4,FOCUSED,53.2,0.0,46.8,6,Functions -> Data Types -> Decorators -> Variables -> Loops -> Generators,Input Output,58,HIGH,Needs mentor attention
+TC021,Megha Patil,megha.patil.10@smartfocus.demo,7,132,80.3,42.7,SLEEPY,50.0,0.0,50.0,3,Operators -> Data Types -> Variables,Recursion,31,HIGH,Needs mentor attention
+TC022,Meghana Krishna,meghana.krishna.46@smartfocus.demo,5,109,94.5,73.2,FOCUSED,94.5,5.5,0.0,3,Data Types -> Operators -> Variables,Recursion,51,LOW,Test passed: learner engaged
+TC023,Meghana Poojary,meghana.poojary.11@smartfocus.demo,3,68,94.1,73.6,FOCUSED,94.1,5.9,0.0,5,Variables -> Data Types -> Functions -> Operators -> Loops,Loop Control,52,LOW,Test passed: learner engaged
+TC024,Nandini Patil,nandini.patil.50@smartfocus.demo,7,141,73.8,39.7,SLEEPY,49.6,0.0,50.4,5,Variables -> Sets -> Dictionaries -> Lists -> Data Types,Iterators,52,HIGH,Needs mentor attention
+TC025,Nandini Shenoy,nandini.shenoy.15@smartfocus.demo,3,54,74.1,40.3,SLEEPY,37.0,0.0,63.0,5,Functions -> Data Types -> Modules -> File Handling -> Variables,Type Casting,48,HIGH,Needs mentor attention
+TC026,Nikhil Bhat,nikhil.bhat.57@smartfocus.demo,4,96,80.2,50.6,FOCUSED,64.6,35.4,0.0,5,Dictionaries -> Data Types -> Variables -> Lists -> Tuples,Classes Objects,55,MEDIUM,Watch and revise weak topics
+TC027,Nikhil Iyer,nikhil.iyer.22@smartfocus.demo,3,66,89.4,56.7,FOCUSED,62.1,37.9,0.0,4,Loops -> Data Types -> Variables -> Operators,Inheritance,56,MEDIUM,Watch and revise weak topics
+TC028,Pavithra Poojary,pavithra.poojary.31@smartfocus.demo,7,159,91.8,71.5,FOCUSED,91.8,8.2,0.0,6,Exception Handling -> Operators -> Variables -> Data Types -> Loops -> Functions,Nested Conditionals,57,LOW,Test passed: learner engaged
+TC029,Prajwal Naidu,prajwal.naidu.56@smartfocus.demo,4,80,93.8,71.6,FOCUSED,93.8,6.2,0.0,5,Functions -> Variables -> Operators -> Loops -> Data Types,Function Arguments,50,LOW,Test passed: learner engaged
+TC030,Prajwal Rao,prajwal.rao.21@smartfocus.demo,7,129,89.9,70.2,FOCUSED,89.9,10.1,0.0,5,Variables -> Dictionaries -> Data Types -> Lists -> Tuples,OOP Basics,55,LOW,Test passed: learner engaged
+TC031,Pranav Reddy,pranav.reddy.28@smartfocus.demo,5,117,64.1,29.9,FOCUSED,46.2,8.5,45.3,3,Data Types -> Operators -> Variables,Custom Exceptions,37,HIGH,Needs mentor attention
+TC032,Raksha Kulkarni,raksha.kulkarni.54@smartfocus.demo,3,61,86.9,74.8,FOCUSED,86.9,13.1,0.0,3,Data Types -> Variables -> Loops,OOP Basics,41,LOW,Test passed: learner engaged
+TC033,Raksha Nair,raksha.nair.19@smartfocus.demo,6,126,92.9,78.9,FOCUSED,92.9,7.1,0.0,3,Data Types -> Variables -> Operators,Tuples,42,LOW,Test passed: learner engaged
+TC034,Rohith Murthy,rohith.murthy.29@smartfocus.demo,6,127,96.1,82.0,FOCUSED,96.1,3.9,0.0,3,Variables -> Operators -> Data Types,Decorators,42,LOW,Test passed: learner engaged
+TC035,Sahana Acharya,sahana.acharya.20@smartfocus.demo,7,151,74.2,41.1,FOCUSED,53.6,0.0,46.4,4,Data Types -> Operators -> Loops -> Variables,Context Managers,31,HIGH,Needs mentor attention
+TC036,Sahana Shenoy,sahana.shenoy.55@smartfocus.demo,6,121,73.6,40.0,SLEEPY,39.7,0.0,60.3,3,Data Types -> Operators -> Variables,Decorators,45,HIGH,Needs mentor attention
+TC037,Saketh Acharya,saketh.acharya.40@smartfocus.demo,3,53,77.4,40.3,FOCUSED,58.5,0.0,41.5,4,Operators -> Variables -> Loops -> Data Types,Input Output,16,HIGH,Needs mentor attention
+TC038,Saketh Menon,saketh.menon.5@smartfocus.demo,5,110,75.5,39.7,FOCUSED,50.9,0.0,49.1,3,Variables -> Lists -> Data Types,Lambda Functions,58,HIGH,Needs mentor attention
+TC039,Sania Gowda,sania.gowda.7@smartfocus.demo,6,110,83.6,52.4,FOCUSED,68.2,31.8,0.0,3,Functions -> Variables -> Data Types,Context Managers,57,MEDIUM,Watch and revise weak topics
+TC040,Sania Iyer,sania.iyer.42@smartfocus.demo,5,96,90.6,55.2,FOCUSED,61.5,38.5,0.0,3,Functions -> Variables -> Data Types,Inheritance,56,MEDIUM,Watch and revise weak topics
+TC041,Sanjana Gowda,sanjana.gowda.27@smartfocus.demo,5,103,86.4,54.1,FOCUSED,64.1,35.9,0.0,5,Data Types -> Generators -> Loops -> Functions -> Variables,Dictionaries,16,MEDIUM,Watch and revise weak topics
+TC042,Shankar Nair,shankar.nair.39@smartfocus.demo,5,107,89.7,76.7,FOCUSED,89.7,10.3,0.0,4,Tuples -> Data Types -> Lists -> Variables,Type Casting,54,LOW,Test passed: learner engaged
+TC043,Shankar Shetty,shankar.shetty.4@smartfocus.demo,6,139,96.4,82.3,FOCUSED,96.4,3.6,0.0,6,Data Types -> Variables -> Functions -> Operators -> Loops -> Exception Handling,Function Arguments,58,LOW,Test passed: learner engaged
+TC044,Shreya Gowda,shreya.gowda.47@smartfocus.demo,3,63,73.0,47.6,BORED,49.2,50.8,0.0,5,Operators -> Variables -> Loops -> Functions -> Data Types,Conditional Statements,43,MEDIUM,Watch and revise weak topics
+TC045,Shreya Pai,shreya.pai.12@smartfocus.demo,5,101,84.2,52.9,FOCUSED,64.4,35.6,0.0,5,Tuples -> Lists -> Variables -> Dictionaries -> Data Types,Conditional Statements,53,MEDIUM,Watch and revise weak topics
+TC046,Shreyas Naidu,shreyas.naidu.36@smartfocus.demo,6,119,92.4,70.4,FOCUSED,92.4,7.6,0.0,6,Loops -> Generators -> Variables -> Data Types -> Functions -> Decorators,File Handling,50,LOW,Test passed: learner engaged
+TC047,Shreyas Rao,shreyas.rao.1@smartfocus.demo,3,60,96.7,74.9,FOCUSED,96.7,3.3,0.0,3,Data Types -> Operators -> Variables,Type Casting,56,LOW,Test passed: learner engaged
+TC048,Spandana Kumar,spandana.kumar.3@smartfocus.demo,3,66,68.2,31.8,FOCUSED,56.1,9.1,34.8,5,Lists -> Dictionaries -> Tuples -> Data Types -> Variables,Lambda Functions,41,HIGH,Needs mentor attention
+TC049,Spandana Prabhu,spandana.prabhu.38@smartfocus.demo,5,105,66.7,29.6,FOCUSED,49.5,8.6,41.9,5,Operators -> Functions -> Loops -> Variables -> Data Types,OOP Basics,54,HIGH,Needs mentor attention
+TC050,Spoorthi Bhat,spoorthi.bhat.37@smartfocus.demo,6,112,84.8,53.8,FOCUSED,67.9,32.1,0.0,3,Variables -> Data Types -> Operators,Exception Handling,56,MEDIUM,Watch and revise weak topics
+TC051,Spoorthi Iyer,spoorthi.iyer.2@smartfocus.demo,7,152,84.2,51.9,FOCUSED,61.2,38.8,0.0,5,Loops -> Functions -> Operators -> Data Types -> Variables,Exception Handling,53,MEDIUM,Watch and revise weak topics
+TC052,Srinidhi Shenoy,srinidhi.shenoy.35@smartfocus.demo,5,97,78.4,40.9,FOCUSED,50.5,0.0,49.5,4,Polymorphism -> Inheritance -> Data Types -> Variables,Type Casting,22,HIGH,Needs mentor attention
+TC053,Tejas Bhat,tejas.bhat.17@smartfocus.demo,7,144,86.1,53.1,FOCUSED,59.0,41.0,0.0,4,Data Types -> Variables -> Inheritance -> Polymorphism,Input Output,57,MEDIUM,Watch and revise weak topics
+TC054,Tejas Pai,tejas.pai.52@smartfocus.demo,6,127,85.8,52.4,FOCUSED,66.9,33.1,0.0,4,Recursion -> Data Types -> Functions -> Variables,Packages,40,MEDIUM,Watch and revise weak topics
+TC055,Vaishnavi Krishna,vaishnavi.krishna.26@smartfocus.demo,4,87,90.8,72.3,FOCUSED,90.8,9.2,0.0,4,Inheritance -> Variables -> Data Types -> Polymorphism,Recursion,48,LOW,Test passed: learner engaged
+TC056,Varsha Menon,varsha.menon.25@smartfocus.demo,6,132,77.3,42.5,SLEEPY,47.7,0.0,52.3,4,Recursion -> Functions -> Variables -> Data Types,Tuples,55,HIGH,Needs mentor attention
+TC057,Vishnu Krishna,vishnu.krishna.6@smartfocus.demo,7,143,87.4,68.9,FOCUSED,87.4,12.6,0.0,4,Data Types -> Functions -> Variables -> Modules,Generators,55,LOW,Test passed: learner engaged
+TC058,Vishnu Rao,vishnu.rao.41@smartfocus.demo,6,130,91.5,70.7,FOCUSED,91.5,8.5,0.0,3,Lists -> Data Types -> Variables,Nested Conditionals,50,LOW,Test passed: learner engaged

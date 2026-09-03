@@ -1,0 +1,28 @@
+\begin{tikzpicture}[
+  font=\scriptsize,
+  node distance=0.5cm and 0.42cm,
+  step/.style={draw, rounded corners, text width=1.42cm, minimum height=0.48cm, align=center, fill=sflight},
+  out/.style={draw, rounded corners, text width=1.45cm, minimum height=0.48cm, align=center, fill=green!10},
+  arrow/.style={-Latex, thick}
+]
+
+\node[step] (frame) {Webcam\\frame};
+\node[step, right=of frame] (decode) {Decode\\JPEG};
+\node[step, right=of decode] (prep) {Gray +\\equalize};
+\node[step, right=of prep] (face) {Face\\cascade};
+
+\node[step, below=0.62cm of decode] (eyes) {Eye ROI\\check};
+\node[step, right=of eyes] (emotion) {Emotion\\classifier};
+\node[step, right=of emotion] (score) {Focus\\score};
+\node[out, right=of score] (event) {WS\\update};
+
+\draw[arrow] (frame) -- (decode);
+\draw[arrow] (decode) -- (prep);
+\draw[arrow] (prep) -- (face);
+\draw[arrow] (face) |- (eyes);
+\draw[arrow] (face) |- (emotion);
+\draw[arrow] (eyes) -- (emotion);
+\draw[arrow] (emotion) -- (score);
+\draw[arrow] (score) -- (event);
+
+\end{tikzpicture}

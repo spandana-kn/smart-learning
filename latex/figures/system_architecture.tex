@@ -1,0 +1,22 @@
+\begin{tikzpicture}[
+  font=\scriptsize,
+  node distance=0.62cm and 0.62cm,
+  box/.style={draw, rounded corners, text width=1.55cm, minimum height=0.52cm, align=center, fill=sflight},
+  db/.style={draw, cylinder, shape border rotate=90, aspect=0.25, text width=1.25cm, minimum height=0.52cm, align=center, fill=white},
+  arrow/.style={-Latex, thick}
+]
+
+\node[box, fill=blue!8] (browser) {React\\frontend};
+\node[box, fill=green!12, right=of browser] (api) {FastAPI\\backend};
+\node[db, right=of api] (sqlite) {SQLite\\logs};
+\node[db, below=of sqlite] (graph) {Neo4j /\\NetworkX};
+\node[box, below=of api, fill=orange!12] (emotion) {Emotion\\service};
+
+\draw[arrow] (browser) -- node[above]{REST/WS} (api);
+\draw[arrow] (api) -- node[below]{events} (browser);
+\draw[arrow] (api) -- (sqlite);
+\draw[arrow] (api) |- (graph);
+\draw[arrow] (api) -- (emotion);
+\draw[arrow] (emotion) -- (api);
+
+\end{tikzpicture}

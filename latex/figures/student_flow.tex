@@ -1,0 +1,28 @@
+\begin{tikzpicture}[
+  font=\scriptsize,
+  node distance=0.5cm and 0.45cm,
+  step/.style={draw, rounded corners, text width=1.5cm, minimum height=0.5cm, align=center, fill=sflight},
+  game/.style={draw, rounded corners, text width=1.5cm, minimum height=0.5cm, align=center, fill=green!10},
+  arrow/.style={-Latex, thick}
+]
+
+\node[step] (login) {Login};
+\node[step, right=of login] (camera) {Camera\\stream};
+\node[step, right=of camera] (cv) {Focus +\\emotion};
+\node[step, right=of cv] (state) {Learner\\state};
+
+\node[game, below=0.65cm of camera] (quest) {Quest\\question};
+\node[game, right=of quest] (answer) {Answer\\submit};
+\node[game, right=of answer] (mastery) {Mastery\\+ XP};
+\node[game, right=of mastery] (next) {Next\\activity};
+
+\draw[arrow] (login) -- (camera);
+\draw[arrow] (camera) -- (cv);
+\draw[arrow] (cv) -- (state);
+\draw[arrow] (state) |- (quest);
+\draw[arrow] (quest) -- (answer);
+\draw[arrow] (answer) -- (mastery);
+\draw[arrow] (mastery) -- (next);
+\draw[arrow] (next.east) -- ++(0.35,0) |- (camera.east);
+
+\end{tikzpicture}

@@ -1,0 +1,26 @@
+\begin{tikzpicture}[
+  font=\scriptsize,
+  node distance=0.55cm and 0.5cm,
+  concept/.style={draw, circle, minimum size=0.92cm, align=center, fill=sflight},
+  core/.style={draw, circle, minimum size=0.92cm, align=center, fill=green!10},
+  advanced/.style={draw, circle, minimum size=0.92cm, align=center, fill=orange!12},
+  arrow/.style={-Latex, thick}
+]
+
+\node[core] (var) {Var};
+\node[core, right=of var] (op) {Ops};
+\node[core, right=of op] (cond) {If};
+\node[concept, right=of cond] (loop) {Loops};
+\node[concept, below=0.55cm of cond] (func) {Func};
+\node[advanced, right=of loop] (oop) {OOP};
+\node[advanced, right=of func] (decor) {Decor};
+
+\draw[arrow] (var) -- (op);
+\draw[arrow] (op) -- (cond);
+\draw[arrow] (cond) -- (loop);
+\draw[arrow] (cond) -- (func);
+\draw[arrow] (loop) -- (oop);
+\draw[arrow] (func) -- (oop);
+\draw[arrow] (func) -- (decor);
+
+\end{tikzpicture}

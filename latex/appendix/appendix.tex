@@ -1,0 +1,64 @@
+\section{Additional Implementation Details}
+
+\subsection{Principal REST and WebSocket Interfaces}
+
+\begin{center}
+\scriptsize
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.2\linewidth}p{0.34\linewidth}p{0.36\linewidth}}
+\toprule
+\textbf{Method} & \textbf{Path} & \textbf{Purpose} \\
+\midrule
+POST & /auth/login & Issues JWT and user profile. \\
+GET & /quests & Lists adaptive concept quests. \\
+POST & /quests/\{id\}/answer & Records an answer and returns the next question. \\
+GET & /graph/visualization & Returns concept graph nodes and edges. \\
+GET & /graph/path-state & Returns covered order, candidates, and recommendation. \\
+POST & /graph/attempt & Updates graph mastery after an attempt. \\
+GET & /focus/history & Returns historical focus samples. \\
+GET & /teacher/class & Returns class risk summary. \\
+WS & /ws/cv-stream & Streams frames and receives focus, emotion, and vision events. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Question and Mastery Data}
+
+The Python question bank is stored as CSV rows with the following fields. This structure kept the import process simple and made it easy to revise questions without changing backend code.
+
+\begin{lstlisting}[style=codeblock]
+id, concept, difficulty, bloom_level,
+question_text, option_a, option_b, option_c,
+option_d, correct_answer, explanation
+\end{lstlisting}
+
+The mastery tracker writes a value in the range 0 to 1 for every practiced concept. A concept can be shown as locked, available, in progress, or mastered depending on prerequisite completion and the current score.
+
+\subsection{WebSocket Event Types}
+
+\begin{center}
+\scriptsize
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{p{0.28\linewidth}p{0.28\linewidth}p{0.34\linewidth}}
+\toprule
+\textbf{Direction} & \textbf{Event} & \textbf{Payload} \\
+\midrule
+Browser to backend & CV\_FRAME & Base64 JPEG frame. \\
+Backend to browser & VISION\_UPDATE & Face box, eye boxes, raw emotion scores. \\
+Backend to browser & FOCUS\_UPDATE & Focus score, attention, learning state. \\
+Backend to browser & EMOTION\_UPDATE & Emotion label and confidence. \\
+Backend to browser & ADAPTATION\_EVENT & Action and short message. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Short Code Excerpt}
+
+\begin{lstlisting}[style=codeblock]
+if correct:
+    new = old + alpha * (1.0 - old)
+else:
+    new = old - alpha * old * 0.5
+
+new = max(0.0, min(1.0, new))
+\end{lstlisting}

@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\caption{Live Adaptation Rules Used by the Prototype}
+\label{tab:rules}
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{p{0.31\linewidth}p{0.47\linewidth}p{0.13\linewidth}}
+\toprule
+\textbf{Action} & \textbf{Trigger} & \textbf{Cooldown} \\
+\midrule
+Force break & Focus score below 15 & 120 s \\
+Wake prompt & Emotion classified as SLEEPY & 90 s \\
+Encouragement & Focus score above 80 & 180 s \\
+Increase difficulty & BORED state with high focus & 120 s \\
+Reduce difficulty & Low focus or repeated wrong answers & Session rule \\
+\bottomrule
+\end{tabular}
+\end{table}
